@@ -1,0 +1,44 @@
+* {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #0052cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.news_item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news_item p {
+    font-size: 25px;
+}
+
+.news_item img {
+    max-width: 10%;
+}
+
+.news__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

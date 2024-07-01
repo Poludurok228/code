@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'web_app/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        .news_item img {
+            max-width: 15%;
+        }
+    </style>
+</head>
+<body>
+    <h1>News</h1>
+
+    <div class="news__container">
+
+        {% for n in news %}
+            <div class="news_item">
+                <img src="{{ n.image.url }}" alt="">
+                <p class="title">{{ n.title }}</p>
+            </div>
+        {% endfor %}
+
+    </div>
+</body>
+</html>
